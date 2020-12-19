@@ -1,0 +1,83 @@
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding:0px 24px;
+}
+.navbar a:first-child{
+    display: none;
+}
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(255,255,255,.1);
+    width: 100vw;
+    padding: 10px 0px;
+    
+}
+.header img{
+    width: 200px;
+    margin-left: 40px;
+}
+.navbar{
+    display: flex;
+    margin-right:60px;
+    z-index: 10;
+}
+
+
+#text_logo{
+    width: 500px;
+}
+
+.slider_overlay{
+    transform: translateY(-500px);
+}
+.slider{
+    z-index: -1;
+    overflow-x: hidden;
+}
+.slider_img img{
+    width: 100vw;
+    height: 90vh;
+}
+.home_content{
+    background-color: rgba(236,236,236,.5);
+    height: 90vh;
+}
+.slider_overlay button{
+    margin-top: 36px;
+    background: transparent;
+    padding: 20px 44px;
+    border-radius: 10px;
+    border: 5px solid rgba(0,0,0,.31);
+}
+.team {
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+    background-color:rgba(236,236,236,.5);
+}
+.team_img_cont >img{
+    width: 150px;
+    border-radius: 100px;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .navbar a:not(:first-child){
+        display: none;
+    }
+    .navbar a:first-child{
+        display: block;
+    }
+    .navbar.responsive a{
+        display: block;
+    }
+    
+}
